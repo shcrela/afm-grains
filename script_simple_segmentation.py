@@ -13,6 +13,7 @@ def crop_afm_bar(im):
     """
     return im[22:980, 5:965]
 
+# We use both the phase and height images
 name_phase = 'E845_phase0.jpg'
 name_height = 'E845_height0.jpg'
 im1 = crop_afm_bar(io.imread(name_phase, as_grey=True))
